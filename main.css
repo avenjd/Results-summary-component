@@ -1,0 +1,168 @@
+/*The designs were created to the following widths:
+	- Mobile: 375px (first)
+	- Desktop: 1440px*/
+:root {
+	--bgc-gradient-light-blue: hsl(252, 100%, 67%);
+	--bgc-gradient-royal-blue: hsl(241, 81%, 54%);
+
+	--bgc-circle-violet-blue: hsla(256, 72%, 46%, 1);
+	--bgc-circle-persian-blue: hsla(241, 72%, 46%, 0);
+
+	--clr-neutral-white: hsl(0, 0%, 100%);
+	--clr-neutral-blue: hsl(221, 100%, 96%);
+	--clr-neutral-lavender: hsl(241, 100%, 89%);
+	--clr-neutral-dark-blue: hsl(224, 30%, 27%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	color: var(--clr-neutral-white);
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+	font-size: 18px;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+section {
+	background-color: var(--clr-neutral-white);
+	max-width: 375px;
+}
+
+/*top block*/
+.card__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 15px;
+	padding: 25px;
+	border-radius: 0 0 2rem 2rem;
+	text-align: center;
+	background-image: linear-gradient(
+		var(--bgc-gradient-light-blue),
+		var(--bgc-gradient-royal-blue)
+	);
+}
+
+.card__circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		var(--bgc-circle-violet-blue),
+		var(--bgc-circle-persian-blue)
+	);
+}
+
+.card__score {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card__score span {
+	font-size: 48px;
+	font-weight: 800;
+	color: var(--clr-neutral-white);
+}
+
+.card__header > h3,
+.card__description,
+.card__score {
+	color: var(--clr-neutral-lavender);
+}
+
+.card__description {
+	padding-bottom: 10px;
+}
+
+/*bottom block*/
+.card__summary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+/*for this project only */
+.card__summary > h3 {
+	margin-inline-end: auto;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.card__summary h3,
+.card__summary p {
+	color: var(--clr-neutral-dark-blue);
+}
+
+.card__summary__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 320px;
+	margin: 10px 20px;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.card__summary__cat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.card__summary p {
+	color: var(--clr-neutral-lavender);
+	font-size: 16px;
+}
+
+.card__summary p span {
+	padding-right: 5px;
+	font-size: 16px;
+	font-weight: 800;
+	color: var(--clr-neutral-dark-blue);
+}
+
+.card__summary__btn {
+	width: 320px;
+	margin-top: 10px;
+	padding: 15px;
+	font-size: 18px;
+	border-radius: 25px;
+	background-color: var(--clr-neutral-dark-blue);
+	color: var(--clr-neutral-white);
+	border: none;
+	cursor: pointer;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
