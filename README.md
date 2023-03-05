@@ -1,5 +1,3 @@
-# Frontend Mentor - Results summary component
-
 # If you want to see the source code, change the branch to master
 
 # Built with
