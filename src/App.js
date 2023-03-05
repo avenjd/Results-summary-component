@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import data from './data.json';
-
+import './main.css';
 export default function App() {
 	const [items] = useState(data);
 	return (
