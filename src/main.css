@@ -21,7 +21,7 @@
 }
 
 body {
-	background-color: #333;
+	background-color: var(--clr-neutral-white);
 	color: var(--clr-neutral-white);
 	font-family: 'Hanken Grotesk', sans-serif;
 }
@@ -38,8 +38,7 @@ p {
 	height: 100vh;
 }
 
-section {
-	background-color: var(--clr-neutral-white);
+.card {
 	max-width: 375px;
 }
 
@@ -102,6 +101,7 @@ section {
 	align-items: center;
 	flex-direction: column;
 	padding: 20px 0;
+	background-color: var(--clr-neutral-white);
 }
 
 /*for this project only */
@@ -161,8 +161,51 @@ section {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	color: #000;
 }
 
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	.card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border-radius: 2rem;
+		background-color: var(--clr-neutral-white);
+		min-width: 680px;
+		box-shadow: 0.5rem 1rem 3rem var(--clr-neutral-blue);
+	}
+
+	.card__circle {
+		width: 170px;
+		height: 170px;
+		margin: 10px 0;
+	}
+
+	.card__header {
+		font-size: 18px;
+		border-radius: 2rem;
+	}
+	.card__description {
+		padding: 0 15px 15px 15px;
+	}
+	.card__summary {
+		border-radius: 2rem;
+	}
+	.card__summary h3 {
+		padding-left: 10px;
+		font-size: 18px;
+		font-weight: 800;
+	}
+	.card__summary__item {
+		width: 270px;
+	}
+	.card__summary__btn {
+		width: 270px;
+	}
+	.card__summary__btn {
+		margin: 25px 0 20px;
+	}
 }

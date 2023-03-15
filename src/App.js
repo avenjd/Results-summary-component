@@ -27,16 +27,10 @@ export default function App() {
 							<div
 								key={i}
 								className='card__summary__item'
-								style={{
-									backgroundColor: `${item.color}15`,
-								}}
-							>
+								style={{ backgroundColor: `${item.color}15` }}>
 								<h4
 									className='card__summary__cat'
-									style={{
-										color: item.color,
-									}}
-								>
+									style={{ color: item.color }}>
 									<img src={item.icon} alt={item.category}></img>
 									{item.category}
 								</h4>
@@ -54,8 +48,7 @@ export default function App() {
 				<a
 					href='https://www.frontendmentor.io?ref=challenge'
 					target='_blank'
-					rel='noreferrer'
-				>
+					rel='noreferrer'>
 					Frontend Mentor
 				</a>
 				. Coded by <a href='https://github.com/avenjd'>aven</a>.
