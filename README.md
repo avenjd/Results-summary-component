@@ -1,5 +1,5 @@
 # Frontend Mentor - Results summary component
-
+# If u want to check source code, change branch to gh-pages
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
 # Built with
