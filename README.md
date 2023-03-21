@@ -1,5 +1,5 @@
 # Frontend Mentor - Results summary component
-
+# If u want to check source code, change branch to master
 # Built with
 - ReactJS
 - Semantic HTML5 markup
